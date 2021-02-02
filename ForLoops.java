@@ -24,7 +24,7 @@ public class ForLoops {
             for(int i = 0; i < 7 - x; i++) {
                 System.out.print("*");
             }
-            for(int j = 0; j <= x; j++) {
+            for(int j = 0; j < x; j++) {
                 System.out.print(" ");
             }
             for(int k = 0; k < 14 - 2 * x; k++) {
@@ -32,6 +32,12 @@ public class ForLoops {
             }
             for(int m = 0; m < -2 + 2 * x; m++) {
                 System.out.print("\\");
+            }
+            for(int n = 0; n < x; n++) {
+                System.out.print(" ");
+            }
+            for(int p = 0; p < 7 - x; p++) {
+                System.out.print("*");
             }
             System.out.println();
         }
