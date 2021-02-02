@@ -4,14 +4,14 @@ public class ForLoops {
     }
 
     public static void slashFigure() {
-        for(int x = 0; x < 6; x++) {
-            for(int i = -2; i <= 10; i += 2) {
-                System.out.print("\n");
+        for(int x = 1; x <= 6; x++) {
+            for(int i = 0; i < 2 * x - 2; i++) {
+                System.out.print("\\");
             }
-            for(int j = 22; j >= 2; j -=4) {
+            for(int j = 0; j < 26 - 4 * x; j++) {
                 System.out.print("!");
             }
-            for(int k = -2; k <= 10; k += 2) {
+            for(int k = 0; k < 2 * x - 2; k++) {
                 System.out.print("/");
             }
             System.out.println();
