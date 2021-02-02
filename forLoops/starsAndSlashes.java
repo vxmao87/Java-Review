@@ -1,4 +1,6 @@
-public class ForLoops {
+package forLoops;
+
+public class starsAndSlashes {
     public static void main(String args[]) {
         slashFigure();
         starSlashFigure();
