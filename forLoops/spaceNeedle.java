@@ -4,7 +4,7 @@ public class spaceNeedle {
     public static void main(String args[]) {
 
         drawPole();
-        // drawBase();
+        drawBase();
         // drawBottom();
         // drawPole();
         // drawBody();
@@ -22,6 +22,29 @@ public class spaceNeedle {
             }
             System.out.println();
         }
+    }
+
+    public static void drawBase() {
+        for(int x = 1; x <= 4; x++) {
+            for(int i = 0; i < 12 - 3 * x; i++) {
+                System.out.print(" ");
+            }
+            System.out.print("__/");
+            for(int j = 0; j < -3 + 3 * x; j++) {
+                System.out.print(":");
+            }
+            System.out.print("||");
+            for(int j = 0; j < -3 + 3 * x; j++) {
+                System.out.print(":");
+            }
+            System.out.print("\\__");
+            System.out.println();
+        }
+        System.out.print("|");
+        for(int y = 0; y < 24; y++) {
+            System.out.print('"');
+        }
+        System.out.print("|");
     }
    
 }
