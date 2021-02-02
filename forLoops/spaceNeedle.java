@@ -1,7 +1,7 @@
 package forLoops;
 
 public class spaceNeedle {
-    public static final int HEIGHT = 5;
+    public static final int HEIGHT = 7;
     public static void main(String args[]) {
 
         drawPole();
@@ -19,9 +19,6 @@ public class spaceNeedle {
                 System.out.print(" ");
             }
             System.out.print("||");
-            for(int i = 0; i < 3 * HEIGHT; i++) {
-                System.out.print(" ");
-            }
             System.out.println();
         }
     }
@@ -50,12 +47,14 @@ public class spaceNeedle {
     }
 
     public static void drawBottom() {
-        for(int x = 1; x <= 4; x++) {
+        for(int x = 1; x <= HEIGHT; x++) {
             for(int i = 0; i < -2 + 2 * x; i++) {
                 System.out.print(" ");
             }
             System.out.print("\\_");
-            for(int j = 0; j < 13 - 2 * x; j++) {
+
+            // (4, 13) and (5, 16), where (HEIGHT, number of "/\"s to print)
+            for(int j = 0; j < ((3 * HEIGHT) + 1) - 2 * x; j++) {
                 System.out.print("/\\");
             }
             System.out.print("_/");
@@ -64,8 +63,10 @@ public class spaceNeedle {
     }
 
     public static void drawBody() {
-        for(int x = 1; x <= 16; x++) {
-            for(int i = 0; i < 9; i++) {
+        for(int x = 1; x <= 4 * HEIGHT; x++) {
+
+            // (4, 9) and (5, 12) where (HEIGHT, number of spaces)
+            for(int i = 0; i < /*9*/ (3 * HEIGHT) - 3; i++) {
                 System.out.print(" ");
             }
             System.out.print("|%%||%%|");
