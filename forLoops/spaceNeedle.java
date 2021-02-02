@@ -5,10 +5,11 @@ public class spaceNeedle {
 
         drawPole();
         drawBase();
+        System.out.println();
         drawBottom();
         drawPole();
-        // drawBody();
-        // drawBase();
+        drawBody();
+        drawBase();
     }
 
     public static void drawPole() {
@@ -45,7 +46,6 @@ public class spaceNeedle {
             System.out.print('"');
         }
         System.out.print("|");
-        System.out.println();
     }
 
     public static void drawBottom() {
@@ -58,6 +58,16 @@ public class spaceNeedle {
                 System.out.print("/\\");
             }
             System.out.print("_/");
+            System.out.println();
+        }
+    }
+
+    public static void drawBody() {
+        for(int x = 1; x <= 16; x++) {
+            for(int i = 0; i < 9; i++) {
+                System.out.print(" ");
+            }
+            System.out.print("|%%||%%|");
             System.out.println();
         }
     }
