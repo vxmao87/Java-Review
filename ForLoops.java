@@ -4,6 +4,12 @@ public class ForLoops {
         starSlashFigure();
     }
 
+    public static void printObject(int times, String character) {
+        for(int i = 0; i < times; i++) {
+            System.out.print(character);
+        }
+    }
+
     public static void slashFigure() {
         for(int x = 1; x <= 6; x++) {
             for(int i = 0; i < 2 * x - 2; i++) {
@@ -19,25 +25,15 @@ public class ForLoops {
         }
     }
 
-    public static void printObject(int times, String character) {
-        for(int i = 0; i < times; i++) {
-            System.out.print(character);
-        }
-    }
-
     public static void starSlashFigure() {
         for(int x = 1; x <= 7; x++) {
             printObject(7 - x, "*");
 
             printObject(x, " ");
 
-            for(int k = 0; k < 14 - 2 * x; k++) {
-                System.out.print("/");
-            }
+            printObject(14 - 2 * x, "/");
 
-            for(int m = 0; m < -2 + 2 * x; m++) {
-                System.out.print("\\");
-            }
+            printObject(-2 + 2 * x, "\\");
 
             printObject(x, " ");
 
