@@ -11,6 +11,8 @@ public class random2 {
         printReverse("what happens now");
         System.out.println();
         inputBirthday(console);
+        System.out.println();
+        printChristmasTree(3, 4);
     }
     
     public static void vertical(String sentence) {
@@ -33,5 +35,13 @@ public class random2 {
         System.out.println("What year were you born?");
         int year = console.nextInt();
         System.out.println("You were born on " + month + " " + day + ", " + year + "!");
+    }
+
+    public static void printChristmasTree(int seg, int height) {
+        for(int x = 1; x <= seg; x++) {
+            for(int y = 1; y < height; y++) {
+                for(int i = 0; i < )
+            }
+        }
     }
 }
