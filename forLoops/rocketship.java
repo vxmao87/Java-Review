@@ -1,7 +1,7 @@
 package forLoops;
 
 public class rocketship {
-    public static final int SIZE = 3;
+    public static final int SIZE = 6;
     public static void main(String args[]) {
         drawTop();
         drawLine();
@@ -15,8 +15,8 @@ public class rocketship {
     }
 
     public static void drawTop() {
-        for(int x = 1; x <= 5; x++) {
-            for(int i = 0; i < 6 - x; i++) {
+        for(int x = 1; x <= SIZE + 2; x++) {
+            for(int i = 0; i < 2 * SIZE - x; i++) {
                 System.out.print(" ");
             }
             for(int j = 0; j < x; j++) {
@@ -32,7 +32,7 @@ public class rocketship {
 
     public static void drawLine() {
         System.out.print("+");
-        for(int i = 0; i < 6; i++) {
+        for(int i = 0; i < 2 * SIZE; i++) {
             System.out.print("=*");
         }
         System.out.print("+");
@@ -40,21 +40,21 @@ public class rocketship {
     }
 
     public static void drawTopBody() {
-        for(int x = 1; x <= 3; x++) {
+        for(int x = 1; x <= SIZE; x++) {
             System.out.print("|");
-            for(int i = 0; i < 3 - x; i++) {
+            for(int i = 0; i < SIZE - x; i++) {
                 System.out.print(".");
             }
             for(int j = 0; j < x; j++) {
                 System.out.print("/\\");
             }
-            for(int k = 0; k < 6 - 2 * x; k++) {
+            for(int k = 0; k < 2 * SIZE - 2 * x; k++) {
                 System.out.print(".");
             }
             for(int a = 0; a < x; a++) {
                 System.out.print("/\\");
             }
-            for(int b = 0; b < 3 - x; b++) {
+            for(int b = 0; b < SIZE - x; b++) {
                 System.out.print(".");
             }
             System.out.print("|");
@@ -63,18 +63,18 @@ public class rocketship {
     }
 
     public static void drawBottomBody() {
-        for(int x = 1; x <= 3; x++) {
+        for(int x = 1; x <= SIZE; x++) {
             System.out.print("|");
             for(int i = 0; i < x - 1; i++) {
                 System.out.print(".");
             }
-            for(int j = 0; j < -x + 4; j++) {
+            for(int j = 0; j < -x + SIZE + 1; j++) {
                 System.out.print("\\/");
             }
             for(int k = 0; k < x * 2 - 2; k++) {
                 System.out.print(".");
             }
-            for(int a = 0; a < -x + 4; a++) {
+            for(int a = 0; a < -x + SIZE + 1; a++) {
                 System.out.print("\\/");
             }
             for(int b = 0; b < x - 1; b++) {
