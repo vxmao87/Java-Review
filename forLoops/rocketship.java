@@ -81,21 +81,26 @@ public class rocketship {
     public static void drawBottomBody() {
         for(int x = 1; x <= SIZE; x++) {
             System.out.print("|");
-            for(int i = 0; i < x - 1; i++) {
-                System.out.print(".");
-            }
-            for(int j = 0; j < -x + SIZE + 1; j++) {
-                System.out.print("\\/");
-            }
-            for(int k = 0; k < x * 2 - 2; k++) {
-                System.out.print(".");
-            }
-            for(int a = 0; a < -x + SIZE + 1; a++) {
-                System.out.print("\\/");
-            }
-            for(int b = 0; b < x - 1; b++) {
-                System.out.print(".");
-            }
+            drawObject(x - 1, ".");
+            // for(int i = 0; i < x - 1; i++) {
+            //     System.out.print(".");
+            // }
+            drawObject(-x + SIZE + 1, "\\/");
+            // for(int j = 0; j < -x + SIZE + 1; j++) {
+            //     System.out.print("\\/");
+            // }
+            drawObject(x * 2 - 2, ".");
+            // for(int k = 0; k < x * 2 - 2; k++) {
+            //     System.out.print(".");
+            // }
+            drawObject(-x + SIZE + 1, "\\/");
+            // for(int a = 0; a < -x + SIZE + 1; a++) {
+            //     System.out.print("\\/");
+            // }
+            drawObject(x - 1, ".");
+            // for(int b = 0; b < x - 1; b++) {
+            //     System.out.print(".");
+            // }
             System.out.print("|");
             System.out.println();
         }
