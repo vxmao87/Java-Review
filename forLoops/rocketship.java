@@ -6,7 +6,12 @@ public class rocketship {
         drawTop();
         drawLine();
         drawTopBody();
-        // drawBottomBody();
+        drawBottomBody();
+        drawLine();
+        drawBottomBody();
+        drawTopBody();
+        drawLine();
+        drawTop();
     }
 
     public static void drawTop() {
@@ -50,6 +55,29 @@ public class rocketship {
                 System.out.print("/\\");
             }
             for(int b = 0; b < 3 - x; b++) {
+                System.out.print(".");
+            }
+            System.out.print("|");
+            System.out.println();
+        }
+    }
+
+    public static void drawBottomBody() {
+        for(int x = 1; x <= 3; x++) {
+            System.out.print("|");
+            for(int i = 0; i < x - 1; i++) {
+                System.out.print(".");
+            }
+            for(int j = 0; j < -x + 4; j++) {
+                System.out.print("\\/");
+            }
+            for(int k = 0; k < x * 2 - 2; k++) {
+                System.out.print(".");
+            }
+            for(int a = 0; a < -x + 4; a++) {
+                System.out.print("\\/");
+            }
+            for(int b = 0; b < x - 1; b++) {
                 System.out.print(".");
             }
             System.out.print("|");
