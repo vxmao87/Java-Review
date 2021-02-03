@@ -10,6 +10,9 @@ public class random {
         System.out.println();
         printSquare(3, 7);
         printSquare(7, 3); // Produces no output
+        printGrid(4, 6);
+        largerAbsVal(11, -22);
+        largestAbsVal(7, 38, -122);
     }
 
     public static void printNumbers(int num) {
@@ -43,6 +46,22 @@ public class random {
     }
 
     public static void printGrid(int row, int column) {
-        for(int x = )
+        for(int x = 1; x <= row; x++) {
+            for(int y = 0; y < column; y++) {
+                System.out.print(x + y * row + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void largerAbsVal(int a, int b) {
+        System.out.println(Math.max(Math.abs(a), Math.abs(b)));
+    }
+
+    public static void largestAbsVal(int a, int b, int c) {
+        int a1 = Math.abs(a);
+        int b1 = Math.abs(b);
+        int c1 = Math.abs(c);
+        System.out.println(Math.max(Math.max(a1, b1), Math.max(b1, c1)));
     }
 }
