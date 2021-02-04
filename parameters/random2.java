@@ -12,7 +12,7 @@ public class random2 {
         System.out.println();
         inputBirthday(console);
         System.out.println();
-        printChristmasTree(3, 4);
+        // printChristmasTree(3, 4);
     }
     
     public static void vertical(String sentence) {
@@ -37,11 +37,11 @@ public class random2 {
         System.out.println("You were born on " + month + " " + day + ", " + year + "!");
     }
 
-    public static void printChristmasTree(int seg, int height) {
-        for(int x = 1; x <= seg; x++) {
-            for(int y = 1; y < height; y++) {
-                for(int i = 0; i < )
-            }
-        }
-    }
+    // public static void printChristmasTree(int seg, int height) {
+    //     for(int x = 1; x <= seg; x++) {
+    //         for(int y = 1; y < height; y++) {
+    //             for(int i = 0; i < )
+    //         }
+    //     }
+    // }
 }
